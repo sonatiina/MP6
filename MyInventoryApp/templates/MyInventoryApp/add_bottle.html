@@ -1,0 +1,64 @@
+{% extends 'MyInventoryApp/base.html' %}
+
+{% block content %}
+<div class="container mt-2">
+    <h3 class="text-center">Add a New Water Bottle</h3>
+    
+    <div class="card p-4 shadow-lg mt-4">
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="sku" class="form-label">SKU</label>
+                    <input type="text" class="form-control" id="sku" placeholder="Enter SKU">
+                </div>
+                <div class="col-md-6">
+                    <label for="brand" class="form-label">Brand</label>
+                    <input type="text" class="form-control" id="brand" placeholder="Enter Brand">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="size" class="form-label">Size</label>
+                    <input type="text" class="form-control" id="size" placeholder="e.g. 18 Oz">
+                </div>
+                <div class="col-md-6">
+                    <label for="mouth_size" class="form-label">Mouth Size</label>
+                    <select class="form-select" id="mouth_size">
+                        <option selected>Choose...</option>
+                        <option>Wide Mouth</option>
+                        <option>Standard Mouth</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="color" class="form-label">Color</label>
+                    <input type="text" class="form-control" id="color" placeholder="Enter Color">
+                </div>
+                <div class="col-md-6">
+                    <label for="supplier" class="form-label">Supplier</label>
+                    <input type="text" class="form-control" id="supplier" placeholder="Enter Supplier">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="cost" class="form-label">Cost</label>
+                    <input type="number" class="form-control" id="cost" placeholder="Enter Cost">
+                </div>
+                <div class="col-md-6">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity" placeholder="Enter Quantity">
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Add Bottle</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

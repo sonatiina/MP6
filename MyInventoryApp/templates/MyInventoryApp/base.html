@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MyInventoryApp{% endblock %}</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            background-color: #ffb6c1;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #b3ecff;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .content {
+            padding: 20px;
+            min-height: 80vh;
+        }
+        .container {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Water Bottles!!!!!!
+    </div>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div class="footer">
+        © 2025
+    </div>
+
+</body>
+</html>
